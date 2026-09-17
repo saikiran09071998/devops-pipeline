@@ -10,7 +10,7 @@ jobs:
 
   steps:
    - name : checkout code
-     uses : actions/checkout@vs
+     uses : actions/checkout@v5
 
    - name : setup node.js
      uses : actions/setup-node@v3
@@ -20,4 +20,3 @@ jobs:
      run : npm install
    - name: run tests
      run : npm test
-     
